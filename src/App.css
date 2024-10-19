@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
+}
+
+.App-logo span {
+  color: paleturquoise;
 }
 
 @media (prefers-reduced-motion: no-preference) {
