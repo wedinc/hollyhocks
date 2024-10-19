@@ -22,6 +22,10 @@ function App() {
         >
           Play Hokkaidle
         </a>
+
+        <a href="/newpage" className="text-c-gray underline">
+          コミュニティページ
+        </a>
         <p
           onClick={() => {
             setCount(count + 1);
