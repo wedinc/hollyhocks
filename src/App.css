@@ -13,6 +13,22 @@
   }
 }
 
+.joinBtn {
+  width: 10em;
+  height: 5ex;
+  background-color: orange;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.joinBtn:hover {
+  width: 15em;
+  height: 8ex;
+  background-color: bisque;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -20,7 +36,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: none;
 }
 
 @keyframes App-logo-spin {
