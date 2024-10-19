@@ -1,10 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   let [fine, setfine] = useState(0);
   let [ill, setill] = useState(0);
+  const [data, setData] = useState(undefined);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/yurunull")
+      .then((res) => res.json())
+      .then((json) => setData(json));
+  }, []);
 
   return (
     <div className="App-header bg-light-pink">
@@ -44,6 +51,19 @@ function App() {
         >
           😥{ill}
         </p>
+
+        {data ? (
+          <>
+            <img
+              className="w-32 rouded-full mt-10"
+              alt="icon"
+              src={data.avatar_url}
+            />
+            <p className="text-light-pink">{data.login}</p>
+          </>
+        ) : (
+          <p>no data</p>
+        )}
       </header>
     </div>
   );
