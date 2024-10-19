@@ -40,6 +40,10 @@ function App() {
         >
           <boton class="joinBtn">👎{countbad}</boton>
         </p>
+
+        <a href="/newpage" className="text-pastel-red underline">
+          コミュニティページ
+        </a>
       </header>
     </div>
   );
