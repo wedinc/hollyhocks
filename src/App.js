@@ -24,6 +24,9 @@ function App() {
         >
           Learn WED
         </a>
+        <a href="/newpage" className="text-pastel-red underline">
+          コミュニティページ
+        </a>
         <p
           onClick={() => {
             setCount(count + 1);
