@@ -23,26 +23,26 @@ function App() {
         >
           WED について
         </a>
-        <p
+        <a href="/newpage" className="text-pastel-red underline">
+          コミュニティページ
+        </a>
         <button
           className="text-pastel-purple text-2xl bg-pastel-gray p-1 m-2 rounded-lg hover:text-4xl"
           onClick={() => {
-            setCount(count + 1);
+            setCount(count1 + 1);
           }}
         >
-          👍{count}
+          👍{count1}
         </button>
-        </p>
-        <p
+
         <button
           className="text-pastel-purple text-2xl bg-pastel-gray p-1 m-2 rounded-lg hover:text-4xl"
           onClick={() => {
-            setCount2(count + 1);
+            setCount2(count2 + 1);
           }}
         >
-          👎{count}
+          👎{count2}
         </button>
-        </p>
       </header>
     </div>
   );
