@@ -22,16 +22,19 @@ function App() {
         >
           Which is your physical condition?
         </a>
+
+        <a href="/newpage" class="text-pastel-red" underline>
+          コミュニティぺージ
+        </a>
+
         <p
           className="text-pastel-purple text-2xl bg-yellow p-1 m-2 rouded-lg hover:text-4xl"
           onClick={() => {
             setfine(fine + 1);
-            document.getElementById("That's nice!");
           }}
         >
           😊{fine}
         </p>
-
         <p
           className="text-pastel-purple text-2xl bg-yellow p-1 m-2 rouded-lg hover:text-4xl"
           onClick={() => {
