@@ -1,10 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   let [goodcount, setgoodCount] = useState(0);
   let [badcount, setbadCount] = useState(0);
+  const [data, setData] = useState(undefined);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/IsogaiEito")
+      .then((res) => res.json())
+      .then((json) => setData(json));
+  }, []);
 
   return (
     <div className="App">
@@ -47,6 +55,18 @@ function App() {
           <button>👎</button>
           {badcount}
         </p>
+        {data ? (
+          <>
+            <img
+              className="w-32 rounded-full mt-10"
+              alt="icon"
+              src={data.avatar_ur}
+              />
+              <p className="text-aquamarine">{data.login}</p>
+            </>
+        ) : (
+          <p>no data</p>
+        )}
       </header>
     </div>
   );
