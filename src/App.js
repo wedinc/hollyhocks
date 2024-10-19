@@ -25,6 +25,9 @@ function App() {
         >
           Learn WED
         </a>
+        <a href="/newpage" className="text-aquamarine underline">
+          コミュニティページ
+        </a>
         <p
           className="text-aquamarine text-3xl bg-navy p-1 m-2 rounded-lg hover:text-4xl"
           onClick={() => {
