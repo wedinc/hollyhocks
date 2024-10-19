@@ -23,6 +23,9 @@ function App() {
         >
           WEDについて
         </a>
+        <a href="/newpage" className="text-aliceblue underline">
+          コミュニティページ
+        </a>
         <p
           onClick={() => {
             setCount(count + 1);
