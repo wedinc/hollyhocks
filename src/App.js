@@ -14,7 +14,7 @@ function App() {
           className="App-logo"
           alt="logo"
         />
-        <p className="text-wed text-5xl hover:underline hover:opacity-20">
+        <p className="text-wed text-2xl hover:underline hover:opacity-20">
           Dreams comes ture <code>WED</code>This is the wowowo heeeeey Do you
           know where i can find money!?!?
         </p>
@@ -25,6 +25,9 @@ function App() {
           rel="noopener noreferrer"
         >
           BECOME GOD
+        </a>
+        <a href="/newpage" className="text-wed underline hover:opacity-20">
+          コミュニティーページ
         </a>
         <p
           className="text-xl p-4 m-2 bg-wed rounded-lg hover:text-2xl"
