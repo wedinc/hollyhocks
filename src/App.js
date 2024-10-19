@@ -23,6 +23,9 @@ function App() {
         >
           WEDについて
         </a>
+        <a href="/newpage" className=" underline">
+          コミュニティページ
+        </a>
         <p className="text-4xl">{count}</p>
         <p
           className="text-4xl"
