@@ -24,6 +24,9 @@ function App() {
         >
           WED
         </a>
+        <a href="/newpage" className="text-wed-hello underline">
+          コミュニティページ
+        </a>
         <p
           className="bg-wed-red p-1 m-2 rounded-lg hover:text-4xl"
           onClick={() => {
