@@ -24,23 +24,26 @@ function App() {
         >
           ⇒ article ⇐
         </a>
-        <p
+        <a href="/newpage" className="text-pastel-red underline">
+          コミュニティページ
+        </a>
+        <button
           className="text-pastel-red"
           onClick={() => {
             setCount(count + 1);
           }}
         >
           ☝
-        </p>
-        {count}
-        <p
+        </button>
+        <p className="text-pastel-red">{count}</p>
+        <button
           className="text-pastel-red"
           onClick={() => {
             setCount(count - 1);
           }}
         >
           ☟
-        </p>
+        </button>
       </header>
     </div>
   );
